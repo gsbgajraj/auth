@@ -8,6 +8,7 @@ import allRoutes from './routes/index.js';
 
 const app = express();
 const PORT = process.env.PORT || 8000;
+const DB_CONNECTION_STRING = "mongodb://127.0.0.1:27017/dooper";
 
 // middleware
 app.use(cors());

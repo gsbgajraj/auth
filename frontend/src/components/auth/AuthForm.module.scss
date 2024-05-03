@@ -1,13 +1,13 @@
-.register,
-.login {
+.register,.login {
 	flex: 1;
 }
 
 .title {
+	margin-top: 25rem;
 	font-size: 3rem;
 }
 .authForm {
-	margin-top: 2rem;
+	margin-top: 3rem;
 	width: 100%;
 	label {
 		width: 100%;
@@ -29,3 +29,4 @@
 		cursor: pointer;
 	}
 }
+

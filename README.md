@@ -26,4 +26,6 @@ It is a simple app. In the project we didn't focus on styles, so the ui is simpl
 
 Basic knowledge of react and express.
 if you don't have basic knowledge of express, then you can watch these videos [simple crud with express and mongoDb]
+https://www.youtube.com/watch?v=jK7mcMrYzj8&list=PL-LRDpVN2fZA-1igOQ6PDcqfBjS-vaC7w
+
 # dooper

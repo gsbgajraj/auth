@@ -28,21 +28,23 @@ export const getUserInfo = async (req, res, next) => {
   }
 };
 
-// export const createUser = async (req, res, next) => {
-//   try {
-//     const user = new User(req.body);
-//     const newUser = await user.save().select('name user');
-//     return res.status(201).json(newUser);
-//   } catch (err) {
-//     return next(err);
-//   }
-// };
+//last 2 functions were commented 
+export const createUser = async (req, res, next) => {
+  try {
+    const user = new User(req.body);
+    const newUser = await user.save().select('name user');
+    return res.status(201).json(newUser);
+  } catch (err) {
+    return next(err);
+  }
+};
 
-// export const getAllUsers = async (req, res, next) => {
-//   try {
-//     const users = await User.find().select('name email');
-//     return res.status(200).json(users);
-//   } catch (err) {
-//     return next(err);
-//   }
-// };
+export const getAllUsers = async (req, res, next) => {
+  try {
+    const users = await User.find().select('name email');
+    return res.status(200).json(users);
+  } catch (err) {
+    return next(err);
+  }
+};
+

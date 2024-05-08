@@ -8,7 +8,6 @@ import allRoutes from './routes/index.js';
 
 const app = express();
 const PORT = process.env.PORT || 8000;
-const DB_CONNECTION_STRING = "mongodb://127.0.0.1:27017/dooper";
 
 // middleware
 app.use(cors());
@@ -29,7 +28,7 @@ app.use((err, req, res, next) => {
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.DB_CONNECTION_STRING);
+    await mongoose.connect("mongodb://127.0.0.1:27017/dooper");
     console.log('MongoDB Connected');
   } catch (err) {
     console.log(err);
